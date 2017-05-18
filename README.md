@@ -45,9 +45,12 @@ Simplicity of operator In ViewController LoadingIndicator
 }
 
 4.加载失败，点击重新加载动作（Block回调）
+
   typedef void(^ErrorTapBlock)(void);
   @property (nonatomic, copy)ErrorTapBlock tapBlock;
+  
   调用实现：
+  
   __weak typeof(self) weakSelf = self;
     self.tapBlock = ^{
         NSLog(@"Reloading...");
