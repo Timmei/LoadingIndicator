@@ -1,9 +1,11 @@
 # LoadingIndicator
 Simplicity of operator In ViewController LoadingIndicator
 
-1.#import "UIViewController+UBBLoadingIndicate.h"
+1.提供网络加载过程中Loading
+
+  #import "UIViewController+UBBLoadingIndicate.h"
   #import <objc/runtime.h>
-  提供网络加载过程中Loading
+  
 - (void)ubbStartLoading;
 - (void)ubbLoadingSuccess;
 - (void)ubbLoadingError;
